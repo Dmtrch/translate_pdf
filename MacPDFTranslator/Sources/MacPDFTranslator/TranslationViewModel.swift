@@ -81,7 +81,8 @@ final class TranslationViewModel {
         phase = .running(stage: "parse")
 
         let arguments = [inputPath, "-o", outputPath,
-                         "--from", srcLang, "--to", dstLang, "--model", model]
+                         "--from", srcLang, "--to", dstLang, "--model", model,
+                         "--parallel", "0"]
         do {
             try runner.start(python: engine.python, script: engine.script,
                              arguments: arguments) { [weak self] event in

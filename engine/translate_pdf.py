@@ -51,7 +51,7 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     parser.add_argument("--model", default=DEFAULT_MODEL,
                         help=f"Модель Ollama (по умолчанию {DEFAULT_MODEL})")
     parser.add_argument("--ollama-url", default="http://localhost:11434")
-    parser.add_argument("--parallel", type=int, default=0,
+    parser.add_argument("--parallel", type=int, default=4,
                         help="Число параллельных запросов перевода "
                              "(0 = авто по свободной памяти)")
     return parser.parse_args(argv)

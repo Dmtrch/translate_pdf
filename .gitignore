@@ -18,3 +18,4 @@ fixtures/
 
 # Большие тестовые PDF
 test.pdf
+.osgrep

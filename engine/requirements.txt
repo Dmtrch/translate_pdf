@@ -1,0 +1,4 @@
+pymupdf>=1.24.0
+pyobjc-framework-Vision>=10.0
+requests>=2.31.0
+pytest>=8.0.0

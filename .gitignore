@@ -1,0 +1,20 @@
+# Python
+engine/.venv/
+__pycache__/
+.pytest_cache/
+pytest-of-dim/
+
+# Swift
+MacPDFTranslator/.build/
+
+# Сгенерированные тестовые данные и бенчмарки
+fixtures/
+.bench/
+
+# Локальные служебные файлы
+.osgrep/
+.claude/settings.local.json
+.DS_Store
+
+# Большие тестовые PDF
+test.pdf
